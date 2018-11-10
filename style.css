@@ -1,0 +1,354 @@
+/*
+Theme Name: ITU LAN
+Author: Rebecca Heegaard
+Author URI: http://itu.dk/people/rebn/
+Description: Theme for the ITU LAN website.
+Version: 0.1
+*/
+
+#logo {
+	width: 60;
+	height: 60;
+	background-color: #3598DB;
+	background-image: url('itulanlogomini.png');
+}
+
+#logo:hover {
+	background-color: #FFFFFF;
+	background-image: url('itulanlogomini_blue.png');
+}
+
+#myNavbar {
+	padding: 0;
+}
+
+.nav.navbar-nav.navbar-right li a {
+	color: black;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+	color: white;
+	background-color: #3598DB;
+}
+
+.nav.navbar-nav li a {
+	color: black;
+}
+
+.nav.navbar-nav li a:hover {
+	color: white;
+	background-color: #3598DB;
+}
+
+.navbar {
+	border: 0;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 60px;
+    height: 60px;
+    padding-top: 0;
+	border: 0;
+	margin: 0;
+	font-family: 'Arial Narrow', Arial, sans-serif;
+	font-size: 14;
+	font-weight: bold;
+	color: black;
+    text-transform: uppercase;
+	background-color: #FFFFFF;
+}
+
+.navbar-brand {
+	padding: 0;
+}
+
+.navbar-nav li a {
+	min-width: 120;
+	text-align: center;
+	border: 0;
+}
+
+body {
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+	background: #3598DB;
+	background-image: url('pattern.png');
+    background-attachment: fixed;
+    color: black;
+	line-height: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #3598DB;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3598DB;
+}
+
+a#readmore {
+	font-weight: normal;
+    text-decoration: none;
+    color: #3598DB;
+}
+
+a#title {
+    color: black;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60;
+    font-size: 14;
+    background: white;
+}
+
+#content {
+    margin: 60 0 60 0;
+}
+
+#outercontent, #innercontent, #postbox, #textbox, #titlebox {
+    display: inline-flex;
+    width: 100%;
+}
+
+#outercontent {
+    margin: 30 0;
+    flex-flow: row wrap;
+}
+
+#innercontent, #innercontentsingle {
+    margin: 30 60;
+	width: 100%;
+    background: white;
+}
+
+#innercontent {
+    min-height: 300;
+}
+
+#postbox, #postboxsingle {
+    width: 100%;
+}
+
+#postbox {
+    margin: 30 30 30 0;
+    min-height: 240;
+}
+
+#picturebox {
+    margin: 0 0 0 30;
+    height: 240;
+    width: 240;
+	display: flex;
+}
+
+#pictureboxsingle {
+    margin: 30 30 30 30;
+	text-align: center;
+}
+
+#thumb {
+	height: 240;
+	width: 240;
+	object-fit: cover;
+}
+
+#thumbsingle {
+    height: 400;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+#textbox2, #textbox2single {
+    flex-flow: row wrap;
+}
+
+#textbox2 {
+    width: 100%;
+    margin: 0 0 0 30;
+    min-height: 240;
+}
+
+#textbox2single {
+	width: calc(100%-60px);
+	margin: 30 30 30 30;
+}
+
+#titlebox {
+    margin: 0 0 23 0;
+    vertical-align: top;
+    min-height: 52;
+    width: 100%;
+}
+
+#textbox, #textboxsingle {
+    vertical-align: top;
+    width: 100%;
+    font-size: 24;
+}
+
+#textbox {
+    min-height: 165;
+}
+
+#date {
+	height: 10;
+	font-size: 16;
+}
+
+h1 {
+	line-height: normal;
+	padding: 0;
+	border: 0;
+	font-weight: bold;
+    margin: 0;
+    font-size: 36;
+}
+
+p {
+    margin: 0 0 0 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60;
+    background: #383838;
+    color: white;
+    font-size: 14;
+}
+
+#menutext {
+    margin:auto;
+}
+
+#footertext {
+    height: 60;
+    display: inline-flex;
+    padding: 0 0 0 30;
+}
+
+#footerrighttext {
+    float: right;
+    height: 60;
+    display: inline-flex;
+    padding: 0 30 0 0;
+}
+
+#img-contact {
+    border-radius: 50%;
+	width: 250;
+}
+
+div#contact {
+	margin: 0 15 30 15;
+	display: inline-block;
+	vertical-align: top;
+	width: 250;
+}
+
+p#contact {
+	font-size: 20;
+}
+
+#maincontact1 {
+	text-align: center;
+	width: 100%;
+}
+
+#maincontact2 {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+
+@media (max-width: 650px) {
+	#postbox {
+		flex-flow: row wrap;
+	}
+}
+
+/*@media (max-width: 1905px) and (min-width: 1050px) {
+	#maincontact2 {
+		width: 860;
+	}
+}*/
+
+@media (max-width: 1040px) {
+	.navbar-header {
+		float: none;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-collapse {
+		border-top: 1px solid transparent;
+	}
+	.navbar-collapse.collapse {
+		display: none!important;
+	}
+	.navbar-nav,
+	.navbar-right {
+		float: none!important;
+		max-width: 100%;
+        margin: 7.5px -15px 7.5px 0px
+	}
+	.navbar-nav>li,
+	.navbar-right>li {
+		float: none;
+		max-width: 100%;
+	}
+	.navbar-text {
+		float: none;
+	}
+	.navbar-collapse.collapse.in { 
+		display: block!important;
+	}
+	footer {
+		visibility: hidden;
+	}
+	#outercontent {
+		margin: 0 0;
+	}
+	#innercontent, #innercontentsingle {
+		margin: 30 30;
+	}
+	#textbox, #textboxsingle {
+		font-size: 20;
+	}
+	h1 {
+		font-size: 30;
+	}
+
+	#content {
+		margin: 60 0 0 0;
+	}
+
+	#img-contact {
+		width: 200;
+	}
+
+	div#contact {
+		width: 200;
+	}
+
+	p#contact {
+		font-size: 16;
+	}
+
+	#thumbsingle {
+		height: 200;
+	}
+}
