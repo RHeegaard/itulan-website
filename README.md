@@ -1,2 +1,2 @@
 # itulan-website
-Source code for the ITU LAN website's Wordpress theme.
+Source code for the old ITU LAN website's Wordpress theme.
